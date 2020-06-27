@@ -1,7 +1,7 @@
 Flight,Depature,Arrival,Time
-Flight:1, depature : YUL, arrival: YYZ, day:  1
-Flight:2, depature : YUL, arrival: YYC, day:  1
-Flight:3, depature : YUL, arrival: YVR, day:  1
-Flight:4, depature : YUL, arrival: YYZ, day:  2
-Flight:5, depature : YUL, arrival: YYC, day:  2
-Flight:6, depature : YUL, arrival: YVR, day:  2
+Flight: 1, depature: YUL, arrival: YYZ, day:  1
+Flight: 2, depature: YUL, arrival: YYC, day:  1
+Flight: 3, depature: YUL, arrival: YVR, day:  1
+Flight: 4, depature: YUL, arrival: YYZ, day:  2
+Flight: 5, depature: YUL, arrival: YYC, day:  2
+Flight: 6, depature: YUL, arrival: YVR, day:  2
