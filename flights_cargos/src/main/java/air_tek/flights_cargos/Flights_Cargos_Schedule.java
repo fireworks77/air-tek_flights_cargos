@@ -6,11 +6,14 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 
 /**
- * Hello world!
- *
+ * @chongxiang
+ * June/27/2020
  */
 public class Flights_Cargos_Schedule 
 {
@@ -18,7 +21,7 @@ public class Flights_Cargos_Schedule
 	
 	private static JSON oJSON = new JSON();
 	
-	private static Logger Log = Logger.getLogger(Flights_Cargos_Schedule.class.getName());
+	private static Logger Log = LogManager.getLogger(Flights_Cargos_Schedule.class.getName());
 	
 	private Map<String, String> m_Filghts = new TreeMap<String, String>();
 	
@@ -54,8 +57,8 @@ public class Flights_Cargos_Schedule
         		String s_Schedule = "Flight" + "," + "Depature" + "," + "Arrival" + "," + "Time" + "\n";
         		for(String s_Flight: this.m_Filghts.keySet()) {
         			String[] arr_Flight_Data = this.m_Filghts.get(s_Flight).split("-");
-        			s_Schedule = s_Schedule + s_Flight.replace(" ", ":") + ", "
-        						+ "depature : " +  arr_Flight_Data[0] + ", "
+        			s_Schedule = s_Schedule + s_Flight.replace(" ", ": ") + ", "
+        						+ "depature: " +  arr_Flight_Data[0] + ", "
         						+ "arrival: " + arr_Flight_Data[1] + ", "
         						+ "day: " + arr_Flight_Data[2].replace("Day", "") + "\n";
         					
@@ -86,7 +89,7 @@ public class Flights_Cargos_Schedule
     					String[] arr_Flight_Data = this.m_Filghts.get(s_Flight).split("-");
     					int int_Capacity = this.m_Flights_Cap.get(s_Flight);
     					if(arr_Flight_Data[1].equalsIgnoreCase(s_Destination) && int_Capacity > 0) {
-    						s_Order_Cargo = s_Order_Cargo + s_Order + "," 
+    						s_Order_Cargo = s_Order_Cargo + "order: " + s_Order + ", " 
     								+ s_Flight.replace("Flight ", "flightnumber: ") + ", "
             						+ "depature: " +  arr_Flight_Data[0] + ", "
             						+ "arrival: " + arr_Flight_Data[1] + ", "

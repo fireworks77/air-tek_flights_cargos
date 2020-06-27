@@ -3,8 +3,8 @@ package air_tek.flights_cargos;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.xml.DOMConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -14,7 +14,7 @@ public class JSON {
 
 	private static Utilities oUtilities = new Utilities();
 
-	private static Logger Log = Logger.getLogger(JSON.class.getName());
+	private static Logger Log = LogManager.getLogger(JSON.class.getName());
 	
 	/**
 	 * 
@@ -25,7 +25,7 @@ public class JSON {
 	 */
 		public ArrayList<String> funcGetValue_JSON(String s_JSON_doc, String s_terms)throws Exception{
 			
-			DOMConfigurator.configure("log4j.xml");
+			//DOMConfigurator.configure("log4j.xml");
 			
 			ArrayList<String> arr_results = new ArrayList<String>();
 			
