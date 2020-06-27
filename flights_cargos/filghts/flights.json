@@ -1,0 +1,46 @@
+{
+  "flights": [
+    {
+      "flight": "Flight 1",
+      "from": "YUL",
+      "to": "YYZ",
+      "time": "Day 1",
+      "capacity": 20
+    },
+    {
+      "flight": "Flight 2",
+      "from": "YUL",
+      "to": "YYC",
+      "time": "Day 1",
+      "capacity": 20
+    },
+    {
+      "flight": "Flight 3",
+      "from": "YUL",
+      "to": "YVR",
+      "time": "Day 1",
+      "capacity": 20
+    },
+    {
+      "flight": "Flight 4",
+      "from": "YUL",
+      "to": "YYZ",
+      "time": "Day 2",
+      "capacity": 20
+    },
+    {
+      "flight": "Flight 5",
+      "from": "YUL",
+      "to": "YYC",
+      "time": "Day 2",
+      "capacity": 20
+    },
+    {
+      "flight": "Flight 6",
+      "from": "YUL",
+      "to": "YVR",
+      "time": "Day 2",
+      "capacity": 20
+    }
+  ]
+}
