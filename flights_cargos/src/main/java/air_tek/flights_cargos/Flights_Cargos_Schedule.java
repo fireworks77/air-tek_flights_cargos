@@ -33,11 +33,13 @@ public class Flights_Cargos_Schedule
     {
     	Flights_Cargos_Schedule oFlights_Cargos_Schedule = new Flights_Cargos_Schedule();
     	
+    	
     	oFlights_Cargos_Schedule.func_Initialize();
     	
     	oFlights_Cargos_Schedule.func_Present_Filghts_Schedule();
     	
     	oFlights_Cargos_Schedule.func_Set_Order_Cargo_List();
+    	
     }
     
     public void func_Initialize()throws Exception {
